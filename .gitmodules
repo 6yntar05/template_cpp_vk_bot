@@ -1,3 +1,0 @@
-[submodule "modules/cpp_vk_lib"]
-	path = modules/cpp_vk_lib
-	url = https://github.com/threadpoolexecutor/cpp_vk_lib.git
