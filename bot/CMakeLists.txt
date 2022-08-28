@@ -6,7 +6,7 @@ include_directories(include)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -O3")
 
-file(GLOB_RECURSE SRC "*.hpp" "*.cpp")
+file(GLOB_RECURSE SRC "*.cpp")
 add_executable(template_bot ${SRC})
 
 find_library(cpp_vk_lib HINTS "../cpp_vk_lib")

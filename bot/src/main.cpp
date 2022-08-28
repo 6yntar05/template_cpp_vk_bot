@@ -5,7 +5,6 @@
 #include "cpp_vk_lib/vk/config/config.hpp"
 #include "cpp_vk_lib/vk/long_poll/long_poll.hpp"
 #include "cpp_vk_lib/runtime/setup_logger.hpp"
-#include "cpp_vk_lib/runtime/signal_handlers.hpp"
 
 #include "spdlog/spdlog.h"
 
@@ -20,7 +19,6 @@ int main(int argc, char* argv[])
     using namespace bot;
     vk::config::load(argv[1]);
     runtime::setup_logger(spdlog::level::level_enum::trace);
-    runtime::setup_signal_handlers();
     spdlog::info("workers: {}", vk::config::num_workers());
 
     bot::message_handler msg_handler;
